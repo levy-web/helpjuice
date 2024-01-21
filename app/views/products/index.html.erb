@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+<div class="container">
+<h1 class="text-4xl text-center mt-5 mb-4">
+  Products
+</h1>
+
+<div class="flex justify-center my-8">
+  <%= render "search/form", locals: { results: [] } %>
+</div>
+
+<div id="products" class="mt-4 mx-10">
+  <%= render "products/products", products: @products %>
+</div>
+<div class="mt-4 mx-10">
+  <%= link_to "New product", new_product_path, class: "rounded-lg py-3 mt-4 px-5 bg-blue-600 text-white font-medium" %>
+</div>
+</div>
+

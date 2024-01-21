@@ -1,0 +1,9 @@
+<% products.each do |product| %>
+    <div class="p-4 border border-gray-300 rounded-lg mt-2">
+      <h2><%= product.name %></h2>
+      <p><%= product.description %></p>
+      <p>
+        <%= link_to "Show this product", product, class: "text-blue-500" %>
+      </p>
+    </div>
+<% end %>

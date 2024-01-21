@@ -54,11 +54,11 @@ gem "bootsnap", require: false
 #searckick gem for easy search
 gem 'searchkick', '~> 5.3', '>= 5.3.1'
 #elastice search gem
-gem 'elasticsearch', '~> 8.12'
+gem  'elasticsearch', "< 7.14"
 #faker gem to generate dummy data
 gem 'faker', '~> 3.2', '>= 3.2.3'
 #foreman gem
-gem 'foreman', '~> 0.87.2'
+gem 'foreman', github: 'ddollar/foreman'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -68,6 +68,8 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+
+  gem "byebug"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
