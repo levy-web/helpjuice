@@ -51,6 +51,15 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+#searckick gem for easy search
+gem 'searchkick', '~> 5.3', '>= 5.3.1'
+#elastice search gem
+gem 'elasticsearch', '~> 8.12'
+#faker gem to generate dummy data
+gem 'faker', '~> 3.2', '>= 3.2.3'
+#foreman gem
+gem 'foreman', '~> 0.87.2'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
